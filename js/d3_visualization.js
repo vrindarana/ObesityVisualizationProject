@@ -11,7 +11,7 @@ const svg = d3.select("#chart")
     .append("g")
     .attr("transform", `translate(${margin.left},${margin.top})`);
 
-d3.csv("Obesity prediction (1).csv").then(function(data) {
+d3.csv("Obesity prediction.csv").then(function(data) {
     const obesityCounts = d3.rollup(data, v => v.length, d => d.Obesity);
     const obesityArray = Array.from(obesityCounts, ([key, value]) => ({ Obesity: key, Count: value }));
 
