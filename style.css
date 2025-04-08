@@ -1,12 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=EB+Garamond&family=Lora:wght@500&family=Merriweather:wght@400&display=swap');
 
 :root {
-  --title-color: #1b4332;
-  --subtitle-color: #2d6a4f;
-  --body-color: #212529;
-  --accent-bg: #b7e4c7;
-  --page-bg: #fffbe6;
-  --highlight: #40916c;
+  --bg-main: #fdfdf9;
+  --bg-section: #eaf4f4;
+  --text-main: #2c2c2c;
+  --text-heading: #1b4332;
+  --accent-primary: #26828e;
+  --accent-secondary: #f17c67;
+  --accent-tertiary: #377eb8;
+  --nav-footer-bg: #145c58;
   --border-radius: 16px;
 }
 
@@ -14,15 +16,15 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Merriweather', serif;
-  background-color: var(--page-bg);
-  color: var(--body-color);
+  background-color: var(--bg-main);
+  color: var(--text-main);
   line-height: 1.6;
 }
 
 /* HEADER & NAV */
 
 header {
-  background-color: var(--highlight);
+  background-color: var(--nav-footer-bg);
   padding: 1rem 0;
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
@@ -51,11 +53,13 @@ header {
   font-size: 1rem;
 }
 
-.nav-links a.active {
+.nav-links a.active,
+.nav-links a:hover {
   text-decoration: underline;
+  color: var(--accent-tertiary);
 }
 
-/* PAGE */
+/* PAGE CONTAINER */
 
 .container {
   max-width: 960px;
@@ -68,47 +72,46 @@ header {
 h1 {
   font-family: 'DM Serif Display', serif;
   font-size: 2.5rem;
-  color: var(--title-color);
+  color: var(--text-heading);
   text-align: center;
 }
 
 h2 {
   font-size: 1.6rem;
   font-family: 'Lora', serif;
-  color: var(--subtitle-color);
+  color: var(--accent-primary);
   margin-top: 2rem;
 }
 
 h3 {
   font-size: 1.3rem;
   font-family: 'Lora', serif;
-  color: var(--title-color);
+  color: var(--accent-primary);
 }
 
 p {
   font-size: 1.05rem;
-  color: var(--body-color);
+  color: var(--text-main);
 }
 
 a {
-  color: var(--subtitle-color);
+  color: var(--accent-tertiary);
   font-weight: 500;
 }
 
 a:hover {
-  color: #1b4332;
+  color: var(--accent-secondary);
   text-decoration: underline;
 }
 
-/* VISUALIZATIONS */
+/* VISUALIZATION SECTIONS */
 
 .viz-section {
   margin-bottom: 2.5rem;
   padding: 2rem;
-  background-color: var(--accent-bg);
+  background-color: var(--bg-section);
   border-radius: var(--border-radius);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-  overflow: hidden;
 }
 
 .viz-section h2 {
@@ -136,7 +139,7 @@ a:hover {
 /* FOOTER */
 
 footer {
-  background-color: var(--highlight);
+  background-color: var(--nav-footer-bg);
   color: #fff;
   text-align: center;
   padding: 1rem;
