@@ -38,17 +38,17 @@ d3.csv("Obesity prediction.csv").then(data => {
     .nice()
     .range([height, 0]);
 
-  // ✅ Colorblind-friendly palette (Color Universal Design)
+  //  Colorblind-friendly palette (Color Universal Design)
   const color = d3.scaleOrdinal()
     .domain(keys)
     .range([
-      "#E69F00", // orange
-      "#56B4E9", // sky blue
-      "#009E73", // bluish green
-      "#F0E442", // yellow
-      "#0072B2", // blue
-      "#D55E00", // vermillion
-      "#CC79A7"  // reddish purple
+      "#c6dbef", // orange
+      "#9ecae1", // sky blue
+      "#6baed6", // bluish green
+      "#4292c6", // yellow
+      "#2171b5", // blue
+      "#08519c", // vermillion
+      "#08306b"  // reddish purple
     ]);
 
   const stacked = d3.stack()
