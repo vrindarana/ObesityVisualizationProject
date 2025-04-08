@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=EB+Garamond&family=Lora:wght@500&family=Merriweather:wght@400&display=swap');
 
 :root {
-  --title-color: #2e294e;         /* dark blue-purple */
-  --subtitle-color: #386cb0;      /* accessible blue */
-  --body-color: #222222;          /* near-black for better contrast */
-  --accent-bg: #e0e0e0;           /* light gray-blue */
-  --page-bg: #f8f9fa;             /* very soft white-gray */
-  --highlight: #117733;           /* deep green, colorblind safe */
+  --title-color: #1b4332;
+  --subtitle-color: #2d6a4f;
+  --body-color: #212529;
+  --accent-bg: #b7e4c7;
+  --page-bg: #fffbe6;
+  --highlight: #40916c;
   --border-radius: 16px;
 }
 
@@ -96,7 +96,7 @@ a {
 }
 
 a:hover {
-  color: #2e294e;
+  color: #1b4332;
   text-decoration: underline;
 }
 
